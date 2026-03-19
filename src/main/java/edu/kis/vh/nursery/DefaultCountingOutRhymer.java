@@ -5,6 +5,7 @@ public class DefaultCountingOutRhymer {
     public static final int CAPACITY_OF_NUMBERS = 12;
     public static final int INITIAL_VALUE = -1;
     public static final int RETURN_VALUE = -1;
+    public static final int DEFAULT_VALUE = -1;
     private final int[] numbers = new int[CAPACITY_OF_NUMBERS];
 
     public int total = INITIAL_VALUE;
@@ -15,7 +16,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
-        return total == INITIAL_VALUE;
+        return total == DEFAULT_VALUE;
     }
 
     public boolean isFull() {
